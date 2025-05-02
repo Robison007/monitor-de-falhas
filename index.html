@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor de Falhas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <h1>Monitor de Falhas</h1>
+
+  <h3>Selecione um problema:</h3>
+  <div id="lista-problemas">
+    <!-- Problemas cadastrados aparecerão aqui -->
+  </div>
+
+  <p>Total de falhas: <span id="contador">0</span></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Problema</th>
+        <th>Data/Hora</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-falhas"></tbody>
+  </table>
+
+  <button onclick="gerarExcel()">Gerar Planilha</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
